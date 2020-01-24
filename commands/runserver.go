@@ -11,7 +11,7 @@ func main() {
 	r := mux.NewRouter()
 
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprint(w, "Welcome to this life-changing API.")
+		fmt.Fprint(w, "Welcome to this life-changing API. It should hot reload!")
 	})
 
 	fmt.Println("Server listening!")

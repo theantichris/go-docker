@@ -1,10 +1,9 @@
 # go-docker
 
-An example of using Docker for a Go project.
+An example of using Docker for a Go project. It uses [CompileDaemon](https://github.com/githubnemo/CompileDaemon) for hot reloading.
 
 ## Running the project
 
 ```bash
-docker build -t go-docker-image .
-docker run -v ~/PATH/TO/PROJECT/go-docker:/app -p 8080:8080 go-docker-image
+docker-compose up
 ```
